@@ -20,6 +20,7 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
@@ -52,7 +53,7 @@
                             <div class="dignity" data-aos="fade-up" data-aos-duration="400" data-aos-once="true">– Быстрая локальная доставка по России</div>
                         </div>
                     </div>
-                    <iframe src="https://www.youtube.com/embed/CkDrAnH9PDM?si=OY0UOXrOu5bMV-e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="iframe" src="https://www.youtube.com/embed/CkDrAnH9PDM?si=OY0UOXrOu5bMV-e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
                 <div class="application">
@@ -65,9 +66,174 @@
             </div>
         </header>
         <main>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section class="services">
+                <div class="services__content">
+                    <div class="services__services">
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">Экспресс доставка</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 15 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 1 дня</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon express_icon"></div>
+                        </div>
+
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">Авиа доставка</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 5.2 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 8 дней</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon avia_icon"></div>
+                        </div>
+
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">Быстрое авто</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 1.8 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 13 дней</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon fast_avto_icon"></div>
+                        </div>
+
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">Авто доставка</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 1.4 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 18 дней</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon avto_icon"></div>
+                        </div>
+
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">ЖД доставка</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 0.9 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 35 дней</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon rw_icon"></div>
+                        </div>
+
+                        <div class="service">
+                            <div class="texts">
+                                <span class="title">Морская доставка</span>
+                                <div class="services__info">
+                                    <span class="price_per_kg option">Цена от 0.5 $ за кг!</span>
+                                    <span class="delivery_time option">Срок от 40 дней</span>
+                                </div>
+                            </div>
+                            <div class="delivery_icon sea_icon"></div>
+                        </div>
+                    </div>
+                    <div class="services__videos">
+                        <iframe class="iframe2" src="https://www.youtube.com/embed/CkDrAnH9PDM?si=OY0UOXrOu5bMV-e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="iframe2" src="https://www.youtube.com/embed/CkDrAnH9PDM?si=OY0UOXrOu5bMV-e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calculator">
+                <div class="calculator__content">
+                    <div class="calculator__title">
+                        <span class="calc__title">Калькулятор доставки грузов из Китая</span>
+                        <span class="calc__desc">Рассчитайте доставку груза из Китая. Цены указаны примерные. Актуальные цены уточняйте у менеджера по телефону</span>
+                    </div>
+                    <div class="calculator__calculator">
+                        <div class="calculator_options">
+                            <div class="calculator__mass">
+                                <span class="mass">Масса груза (кг):</span>
+                                <input type="number" id="mass" min="0" max="3000" value="0">
+                                <input class="mass_input slider" type="range" min="0" max="3000" value="0" oninput="mass.value = this.value">
+                            </div>
+
+                            <div class="calculator__size">
+                                <span class="size">Объём груза (м³):</span>
+                                <input type="number" id="size_count" min="0" max="200" value="0">
+                                <input class="size_input sldier" type="range" min="0" max="200" value="0" oninput="size_count.value = this.value">
+                            </div>
+
+                            <div class="calculator__delivery">
+                                <span class="delivery_type">Тип доставки:</span>
+                                <div class="select">
+                                    <input class="select__input" type="hidden" name="">
+                                    <div class="select__head">Выберите...</div>
+                                    <ul class="select__list" style="display: none;">
+                                        <li class="select__item">
+                                            <span class="type_name">Выберите...</span>
+                                            <span class="type_price"></span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">Эксперсс</span>
+                                            <span class="type_price">1420 рублей/кг</span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">Авиа</span>
+                                            <span class="type_price">490 рублей/кг</span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">Быстрое авто</span>
+                                            <span class="type_price">220 рублей/кг</span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">Авто</span>
+                                            <span class="type_price">180 рублей/кг</span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">ЖД</span>
+                                            <span class="type_price">90 рублей/кг</span>
+                                        </li>
+                                        <li class="select__item">
+                                            <span class="type_name">Морем</span>
+                                            <span class="type_price">45 рублей/кг</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__total">
+                            <span class="total">Итог:</span>
+                            <div class="total_count">0 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="track">
+                <div class="track__content">
+                    <div class="track_block">
+                        <div class="track_title">
+                            <span class="track_position">Узнайте местоположение вашего груза</span>
+                            <span class="track_add">Вы будете перенаправлены на страницу с формой для отслеживания груза. Вам нужно будет ввести трек-номер</span>
+                        </div>
+                        <button class="track_button button">ОТСЛЕДИТЬ ГРУЗ</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="license">
+                <div class="license__content">
+                    <div class="license__title">Наши лицензии</div>
+                    <div class="licenses">
+                        <div class="license__license">
+                            <span class="license__name">Лицензия</span>
+                        </div>
+
+                        <div class="license__license">
+                            <span class="license__name">Лицензия</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="footer__content">
