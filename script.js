@@ -17,15 +17,6 @@ adress.forEach(function(adr){
   })
 });
 
-let services = document.querySelectorAll(".services__services")
-let icons = document.querySelectorAll(".delivery_icon")
-
-for (let i = 0; i<services.length; i++){
-  services[i].addEventListener("mousemove", function(){
-    console.log(icons[i])
-  })
-}
-
 jQuery(($) => {
   $('.select').on('click', '.select__head', function () {
       if ($(this).hasClass('open')) {

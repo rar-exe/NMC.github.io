@@ -152,14 +152,14 @@
                         <div class="calculator_options">
                             <div class="calculator__mass">
                                 <span class="mass">Масса груза (кг):</span>
-                                <input type="number" id="mass" min="0" max="3000" value="0">
-                                <input class="mass_input slider" type="range" min="0" max="3000" value="0" oninput="mass.value = this.value">
+                                <input type="number" id="mass" min="0" max="3000" value="0" oninput="mass_slider.value = this.value">
+                                <input class="mass_input slider" id="mass_slider" type="range" min="0" max="3000" value="0" oninput="mass.value = this.value">
                             </div>
 
                             <div class="calculator__size">
                                 <span class="size">Объём груза (м³):</span>
-                                <input type="number" id="size_count" min="0" max="200" value="0">
-                                <input class="size_input sldier" type="range" min="0" max="200" value="0" oninput="size_count.value = this.value">
+                                <input type="number" id="size_count" min="0" max="200" value="0" oninput="size_slider.value = this.value">
+                                <input class="size_input sldier" id="size_slider" type="range" min="0" max="200" value="0" oninput="size_count.value = this.value">
                             </div>
 
                             <div class="calculator__delivery">
