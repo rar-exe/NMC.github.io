@@ -86,6 +86,11 @@ footer{
     transition: 0.2s ease-in-out;
 }
 
+.footer__logo:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
 .sn:not(:hover){
     background-color: #1E1E1E;
     border: 0px solid #1E1E1E;
@@ -114,6 +119,11 @@ footer{
     transition: 0.2s ease-in-out;
 }
 
+.company:active{
+    scale: 0.9;
+    transition: 0.9 ease-in-out;
+}
+
 .add_info:hover{
     text-decoration: underline;
     scale: 1.1;
@@ -124,6 +134,11 @@ footer{
     text-decoration: none;
     scale: 1;
     transition: 0.2s ease-in-out;
+}
+
+.add_info:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
 }
 
 .adr_infos a:hover{

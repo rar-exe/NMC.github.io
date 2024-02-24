@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const elements = document.querySelectorAll('[data-mask="phone"]')
   if (!elements) return
     const phoneOptions = {
-      mask: '+0(000)000-00-00',
+      mask: '+7(000)000-00-00',
     }
   elements.forEach(el => {
     IMask(el, phoneOptions)
@@ -10,10 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 let adress = document.querySelectorAll(".adress")
+let copyboard = document.querySelector(".copyboard")
 
 adress.forEach(function(adr){
   adr.addEventListener("click", function(){
     navigator.clipboard.writeText(adr.innerHTML);
+    copyboard.style.display = "flex";
+    setTimeout(function(){
+      copyboard.style.display = "none";
+    }, 1000)
   })
 });
 
