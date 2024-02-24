@@ -90,6 +90,11 @@ nav{
     text-decoration: none;
 }
 
+.link:active{
+    scale: 0.9;
+    transition: 0.2s ease-in-out;
+}
+
 .logo:hover{
     scale: 1.1;
     transition: 0.2s ease-in-out;
@@ -97,6 +102,11 @@ nav{
 
 .logo:not(:hover){
     scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.logo:active{
+    scale: 0.9;
     transition: 0.2s ease-in-out;
 }
 
