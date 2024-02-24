@@ -1035,6 +1035,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .mass_input{
+        margin: 0 auto;
         width: 201.53px;
     }
 
@@ -1044,6 +1045,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .size_input{
+        margin: 0 auto;
         width: 201.53px;
     }
 
@@ -1132,6 +1134,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .total_count{
+        margin: 0 auto;
         padding: 0;
         width: 201.67px;
         border-radius: 25px;
