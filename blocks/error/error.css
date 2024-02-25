@@ -1,0 +1,107 @@
+.er{
+    height: 83.7vh;
+    padding: 8.14vh 5.2vw;
+}
+
+.error{
+    height: 100%;
+    font-family: "Prosto One", sans-serif;
+    color: #D9D9D9;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.texts{
+    margin: 0 auto;
+    text-align: left;
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h1{
+    font-size: 220px;
+}
+
+.h2{
+    font-size: 110px;
+}
+
+.h3{
+    font-size: 55px;
+}
+
+.aside{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+.smile{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.smile-img{
+    max-width: 500px;
+}
+
+.quite{
+    font-size: 64px;
+    color: #325F46;
+}
+
+.home_btn{
+    max-width: 500px;
+    max-height: 200px;
+    font-size: 64px;
+    color: #D9D9D9;
+    background-color: #325F46;
+    padding: 23px 53px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.home_btn:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+.home_btn:not(:hover){
+    scale: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.home_btn:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    .error{
+        flex-direction: column;
+    }
+
+    .h1,.h2,.h3{
+        text-align: center;
+    }
+
+    .h1{
+        font-size: 110px;
+    }
+
+    .h2{
+        font-size: 55px;
+    }
+
+    .h3{
+        font-size: 27.5px;
+    }
+}
