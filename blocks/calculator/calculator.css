@@ -54,6 +54,8 @@ input[type="number"]{
     background-color: #D9D9D9;
     border-radius: 100px;
     width: fit-content;
+    padding: 0 5px;
+    text-align: center;
 }
 
 .calculator__size{
