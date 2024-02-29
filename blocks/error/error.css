@@ -1,6 +1,5 @@
 .er{
     height: 83.7vh;
-    padding: 8.14vh 5.2vw;
 }
 
 .error{
@@ -22,18 +21,6 @@
     justify-content: space-between;
 }
 
-.h1{
-    font-size: 220px;
-}
-
-.h2{
-    font-size: 110px;
-}
-
-.h3{
-    font-size: 55px;
-}
-
 .aside{
     margin: 0 auto;
     display: flex;
@@ -43,29 +30,20 @@
 }
 
 .smile{
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 0;
 }
 
-.smile-img{
-    max-width: 500px;
-}
-
 .quite{
-    font-size: 64px;
     color: #325F46;
 }
 
 .home_btn{
-    max-width: 500px;
-    max-height: 200px;
-    font-size: 64px;
     color: #D9D9D9;
     background-color: #325F46;
-    padding: 23px 53px;
     border: none;
-    border-radius: 50px;
     box-shadow: 0 0 10px 10px rgba(0,0,0,0.25);
 }
 
@@ -84,9 +62,146 @@
     transition: 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 1920px) {
+    .er{
+        padding: 88px 100px;
+    }
+
+    .error{
+        flex-direction: row;
+    }
+
+    .h1,.h2,.h3{
+        text-align: left;
+    }
+
+    .h1{
+        font-size: 220px;
+    }
+    
+    .h2{
+        font-size: 110px;
+    }
+    
+    .h3{
+        font-size: 55px;
+    }
+
+    .smile-img{
+        width: 500px;
+    }
+
+    .quite{
+        font-size: 64px;
+    }
+
+    .home_btn{
+        width: 500px;
+        height: 200px;
+        font-size: 64px;
+        padding: 23px 53px;
+        border-radius: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 1919px) {
+    .er{
+        padding: 55px 62px;
+    }
+
+    .error{
+        flex-direction: row;
+    }
+
+    .h1,.h2,.h3{
+        text-align: left;
+    }
+
+    .h1{
+        font-size: 150px;
+    }
+    
+    .h2{
+        font-size: 70px;
+    }
+    
+    .h3{
+        font-size: 40px;
+    }
+
+    .smile-img{
+        width: 312.5px;
+    }
+
+    .quite{
+        font-size: 40px;
+    }
+
+    .home_btn{
+        width: 312.5px;
+        height: 125px;
+        font-size: 40px;
+        padding: 14px 33px;
+        border-radius: 31.25px;
+    }
+}
+
+
+
+@media screen and (max-width: 1279px) {
+    .er{
+        padding: 35px 40px;
+    }
+
+    .error{
+        flex-direction: row;
+    }
+
+    .h1,.h2,.h3{
+        text-align: left;
+    }
+
+    .h1{
+        font-size: 100px;
+    }
+    
+    .h2{
+        font-size: 45px;
+    }
+    
+    .h3{
+        font-size: 25px;
+    }
+
+    .smile-img{
+        width: 200px;
+    }
+
+    .quite{
+        font-size: 25px;
+    }
+
+    .home_btn{
+        width: 200px;
+        height: 80px;
+        font-size: 25px;
+        padding: 9px 21px;
+        border-radius: 20px;
+    }
+}
+
+
+
 @media screen and (max-width: 767px) {
+    .er{
+        padding: 20px 10px;
+    }
+
     .error{
         flex-direction: column;
+        gap: 10px;
     }
 
     .h1,.h2,.h3{
@@ -94,14 +209,34 @@
     }
 
     .h1{
-        font-size: 110px;
+        font-size: 120px;
     }
-
+    
     .h2{
-        font-size: 55px;
+        font-size: 30px;
+    }
+    
+    .h3{
+        font-size: 20px;
     }
 
-    .h3{
-        font-size: 27.5px;
+    .smile-img{
+        width: 200px;
+    }
+
+    .quite{
+        font-size: 25px;
+    }
+
+    .home_btn{
+        width: 280px;
+        height: 80px;
+        font-size: 25px;
+        padding: 9px 21px;
+        border-radius: 20px;
+    }
+
+    .aside{
+        gap: 40px
     }
 }

@@ -51,6 +51,9 @@ input[type="number"]{
     all: unset;
     color: #1E1E1E;
     text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    width: fit-content;
 }
 
 .calculator__size{
@@ -879,10 +882,12 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     input[type="number"]{
+        margin: 0 auto;
         font-size: 19px;
     }
 
     .mass_input{
+        margin: 0 auto;
         width: 270px;
     }
 
@@ -892,6 +897,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .size_input{
+        margin: 0 auto;
         width: 270px;
     }
 
@@ -973,6 +979,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .calculator__total{
+        margin: 0 auto;
         flex-direction: column;
         gap: 19px;
     }
