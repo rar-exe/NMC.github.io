@@ -337,38 +337,34 @@
 
 @media screen and (max-width: 767px) {
     .services{
-        height: 932px;
+        height: 2095px;
     }
 
     .services__services{
         margin: 0 auto;
         margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 289px;
-        height: 400px;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .service{
-        margin: 0 auto;
-        padding: 8px;
-        width: 64px;
-        height: 84px;
-        border-radius: 8px;
+        padding: 20px;
+        width: 160px;
+        height: 210px;
+        border-radius: 20px;
     }
 
     .title{
-        font-size: 12px;
+        font-size: 30px;
     }
     
     .option{
-        font-size: 5px;
+        font-size: 14px;
     }
     
     .delivery_icon{
-        width: 40px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
     }
 
     .iframe2{
@@ -393,38 +389,34 @@
 
 @media screen and (max-width: 429px) {
     .services{
-        height: 694px;
+        height: 1560px;
     }
 
     .services__services{
         margin: 0 auto;
         margin-top: 14.89px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 238.14px;
-        height: 297.85px;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .service{
-        margin: 0 auto;
-        padding: 5.95px;
-        width: 47.63px;
-        height: 62.56px;
-        border-radius: 8px;
+        padding: 14.88px;
+        width: 119.08px;
+        height: 156.29px;
+        border-radius: 14.88px;
     }
 
     .title{
-        font-size: 8px;
+        font-size: 22px;
     }
     
     .option{
-        font-size: 4px;
+        font-size: 10px;
     }
     
     .delivery_icon{
-        width: 29.79px;
-        height: 29.79px;
+        width: 74.42px;
+        height: 74.42px;
     }
 
     .iframe2{
