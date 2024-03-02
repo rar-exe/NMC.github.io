@@ -381,7 +381,7 @@
     }
 
     .service:hover{
-        padding: 8px 4px 8px 12px;
+        padding: 20px 10px 20px 30px;
     }
 }
 
@@ -433,6 +433,6 @@
     }
 
     .service:hover{
-        padding: 5.95px 2.975px 5.95px 8.925px;
+        padding: 14.88px 7.44px 14.88px 22.32px;
     }
 }
