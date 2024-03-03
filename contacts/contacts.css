@@ -1,0 +1,72 @@
+header{
+    height: fit-content;
+}
+
+.header__content{
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+#map{
+    height: 130%;
+    width: 100%;
+    position: absolute; 
+    z-index: -1;
+    top: 0; 
+    left: 0;
+}
+
+.contacts{
+    color: #D9D9D9;
+    font-family: "Prosto One", sans-serif;
+
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contacts_type{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact_link{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.contacts_contacts{
+    font-size: 60px;
+}
+
+.contact_type{
+    font-size: 50px;
+}
+
+.cont_info{
+    font-size: 30px;
+}
+
+.contact_link:hover{
+    text-decoration: underline;
+}

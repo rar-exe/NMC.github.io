@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>NMC</title>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="contacts.css">
+        <link rel="shortcut icon" href="../img/logo.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="pragma" content="no-cache">
+
+        <meta name="geo.region" content="RU">
+        <meta name="geo.placename" content="Москва, Московская область">
+        <meta name="geo.position" content="55.898604;37.390703">
+        <meta name="ICBM" content="55.898604, 37.390703">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="copyboard">Скопировано!</div>
+        <header>
+            <div class="header__content">
+                <nav>
+                    <div class="links">
+                        <a href="../index.html" class="logo">
+                            <img class="logo-img" src="../img/logo.svg" alt="logo">
+                            <span class="logo-name">NMC</span>
+                        </a>
+
+                        <div class="nav_links">
+                            <a href="#" class="link">О компании</a>
+                            <a href="#" class="link"> Услуги</a>
+                            <a href="#" class="link">Доставка</a>
+                            <a href="contacts.html" class="link">Контакты</a>
+                            <a href="#" class="link">Отследить</a>
+                        </div>
+
+                        <button class="nav_btn"><img class="nav-img" src="../img/nav_links.svg" alt="nav"></button>
+                    </div>
+                </nav>
+
+                <div id="map"></div>
+
+                <div class="contacts">
+                    <span class="contacts_contacts">Контакты:</span>
+                    <div class="contacts_type">
+                        <div class="main_contacts types">
+                            <div class="telegram_contacts contact">
+                                <span class="contact_type">Telegram:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Вся актуальная информация о нас в нашем <a href="#" class="contact_link"><b>телеграм канале</b></a></span>
+                                    <span class="cont_info">Сделать заказ вы можете через нашего <a href="#" class="contact_link"><b>телеграм бота</b></a></span>
+                                    <span class="cont_info">Для заказа и уточнений вы можете написать нам в <a href="#" class="contact_link"><b>Telegram</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="whatsapp_contacts contact">
+                                <span class="contact_type">WhatsApp:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Для заказа и уточнений вы можете написать нам в <a href="#" class="contact_link"><b>Whatsapp</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="wechat_contacts contact">
+                                <span class="contact_type">WeChat:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Для заказа и уточнений вы можете писать нам в <a href="#" class="contact_link"><b>WeChat</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="nelzyagram_contacts contact">
+                                <span class="contact_type">NelzyaGram:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Посмотреть актуальные посты вы можете у нас в <a href="#" class="contact_link"><b>NelzyaGram</b></a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional_contacts types">
+                            <div class="phone_contacts contact">
+                                <span class="contact_type">Телефон:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Для заказа и уточнений вы можете позвонить нам по номеру:<br><a href="tel:+79999999999" class="contact_link"><b>+7-999-999-99-99</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="mail_contacts contact">
+                                <span class="contact_type">Почта:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Также вы можете связаться с нами по почте: <a href="mailto:pochta@gmail.ru" class="contact_link"><b>pochta@gmail.com</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="office_contacts contact">
+                                <span class="contact_type">Офис:</span>
+
+                                <div class="contact_info">
+                                    <span class="cont_info">Также для заказов и уточнений вы можете прийти к нам в офис по адресу: <a href="#" class="contact_link adress"><b>Юровская улица, 101</b></a></span>
+                                </div>
+                            </div>
+
+                            <div class="contact"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        <footer>
+            <div class="footer__content">
+                <div class="footer__head">
+                    <a href="../index.html" class="footer__logo">
+                        <img class="footer__logo-img" src="../img/logo.svg" alt="logo">
+                        <span class="footer__logo-name">NMC</span>
+                    </a>
+                    <a href="#" class="company">© ООО «NMC», 2024 г.</a>
+                </div>
+
+                <div class="footer__adreses">
+                    <div class="first_adres">
+                        <span class="city">Чэнду</span>
+                        <div class="adr_infos">
+                            <div class="adr_info">
+                                <span class="office">Офис: </span><span class="adress">人民中路一段, Xihuamen, Xiyuhe, Qingyang District</span>
+                            </div>
+                            <div class="adr_info">
+                                <span class="adr_info">Склад: </span><span class="adress">人民中路一段, Xihuamen, Xiyuhe, Qingyang District</span>
+                            </div>
+                            <a href="tel:+79999999999" class="adr_info">+7-999-999-99-99</a>
+                            <a href="mailto:pochta@gmail.ru" class="adr_info">pochta@gmail.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="second_adres">
+                        <span class="city">Гуанчжоу</span>
+                        <div class="adr_infos">
+                            <div class="adr_info">
+                                <span class="office">Офис: </span><span class="adress">人民中路一段, Xihuamen, Xiyuhe, Qingyang District</span>
+                            </div>
+                            <div class="adr_info">
+                                <span class="adr_info">Склад: </span><span class="adress">人民中路一段, Xihuamen, Xiyuhe, Qingyang District</span>
+                            </div>
+                            <a href="tel:+79999999999" class="adr_info">+7-999-999-99-99</a>
+                            <a href="mailto:pochta@gmail.ru" class="adr_info">pochta@gmail.ru</a>
+                        </div>
+                    </div>
+
+                    <div class="third_adres">
+                        <span class="city">Москва</span>
+                        <div class="adr_infos">
+                            <div class="adr_info">
+                                <span class="office">Офис: </span><span class="adress">Юровская улица, 101</span>
+                            </div>
+                            <div class="adr_info">
+                                <span class="adr_info">Склад: </span><span class="adress">Юровская улица, 101</span>
+                            </div>
+                            <a href="tel:+79999999999" class="adr_info">+7-999-999-99-99</a>
+                            <a href="mailto:pochta@gmail.ru" class="adr_info">pochta@gmail.ru</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__sns">
+                    <a href="#" class="telegram sn">
+                        <img class="sn_icon" src="../img/telegram_icn.svg" alt="telegram icon">
+                    </a>
+
+                    <a href="#" class="whatsapp sn">
+                        <img class="sn_icon" src="../img/whatsapp_icn.svg" alt="whatsapp icon">
+                    </a>
+
+                    <a href="#" class="wechat sn">
+                        <img class="sn_icon" src="../img/wechat_icn.svg" alt="wechat icon">
+                    </a>
+                    <a href="#" class="nelzyagram sn">
+                        <img class="sn_icon" src="../img/nelzyagram_icn.svg" alt="nelzyagram icon">
+                    </a>
+                </div>
+                <div class="footer__aditional">
+                    <a href="#" class="add_info">Политика конфедициальности</a>
+                    <a href="#" class="add_info">Пользовательское соглашение</a>
+                    <a href="#" class="add_info">Обработка персональных данных</a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            AOS.init({
+                easing: 'ease-in-out',
+            });
+        </script>
+    </body>
+
+    <script src="../script.js"></script>
+    <script src="contacts.js"></script>
+</html>
