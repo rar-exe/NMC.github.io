@@ -1,0 +1,639 @@
+footer{
+    width: 100%;
+    background-color: #1E1E1E;
+    position: relative;
+    color: #D9D9D9;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(32, 56, 43, 0.87);
+}
+
+.footer__head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__logo{
+    color: #D9D9D9;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.footer__adreses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adr_infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.adr_info{
+    width: fit-content;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.adress{
+    cursor:pointer;
+}
+
+.footer__sns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sn{
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__aditional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add_info{
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.footer__logo:hover{
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+
+.footer__logo:not(:hover){
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.footer__logo:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.sn:not(:hover){
+    background-color: #1E1E1E;
+    border: 0px solid #1E1E1E;
+    transition: 0.2s ease-in-out;
+}
+
+.sn:active{
+    scale: 0.9;
+    transition: 0.2s ease-in-out;
+}
+
+.sn:not(:active){
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.company:hover{
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+
+.company:not(:hover){
+    text-decoration: none;
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.company:active{
+    scale: 0.9;
+    transition: 0.9 ease-in-out;
+}
+
+.add_info:hover{
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.2s ease-in-out;
+}
+
+.add_info:not(:hover){
+    text-decoration: none;
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.add_info:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.adr_infos a:hover{
+    text-decoration: underline;
+}
+
+.adress:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1920px) {
+    footer{
+        height: 959px;
+    }
+
+    .footer__content{
+        padding: 80px;
+        height: 799px;
+    }
+
+    .footer__logo{
+        gap: 20px;
+    }
+
+    .footer__logo-img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .footer__logo-name{
+        font-size: 60px;
+    }
+
+    .company{
+        font-size: 40px;
+    }
+
+    .adr_infos{
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .city{
+        font-size: 60px;
+    }
+
+    .adr_info{
+        font-size: 18px;
+    }
+
+    .footer__sns{
+        gap: 30px;
+    }
+
+    .sn{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .add_info{
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 1919px) {
+    footer{
+        height: 719px;
+    }
+
+    .footer__content{
+        padding: 60px;
+        height: 599px;
+    }
+
+    .footer__logo{
+        gap: 15px;
+    }
+
+    .footer__logo-img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .footer__logo-name{
+        font-size: 50px;
+    }
+
+    .company{
+        font-size: 30px;
+    }
+
+    .adr_infos{
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .city{
+        font-size: 45px;
+    }
+
+    .adr_info{
+        font-size: 12px;
+    }
+
+    .footer__sns{
+        gap: 23px;
+    }
+
+    .sn{
+        width: 75px;
+        height: 75px;
+        border-radius: 20px;
+    }
+
+    .sn_icon{
+        scale: 0.75;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .add_info{
+        font-size: 22px;
+    }
+}
+
+
+
+@media screen and (max-width: 1439px) {
+    footer{
+        height: 639px;
+    }
+
+    .footer__content{
+        padding: 53.33px;
+        height: 532.34px;
+    }
+
+    .footer__logo{
+        gap: 13px;
+    }
+
+    .footer__logo-img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .footer__logo-name{
+        font-size: 45px;
+    }
+
+    .company{
+        font-size: 25px;
+    }
+
+    .adr_infos{
+        margin-top: 13px;
+        gap: 13px;
+    }
+
+    .city{
+        font-size: 40px;
+    }
+
+    .adr_info{
+        font-size: 12px;
+    }
+
+    .footer__sns{
+        gap: 20px;
+    }
+
+    .sn{
+        width: 66.67px;
+        height: 66.67px;
+        border-radius: 15px;
+    }
+
+    .sn_icon{
+        scale: 0.67;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .add_info{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 1279px) {
+    footer{
+        height: 600px;
+    }
+
+    .footer__content{
+        padding: 50px;
+        height: 500px;
+    }
+
+    .footer__logo{
+        gap: 13px;
+    }
+
+    .footer__logo-img{
+        width: 75px;
+        height: 75px;
+    }
+    
+    .footer__logo-name{
+        font-size: 40px;
+    }
+
+    .company{
+        font-size: 25px;
+    }
+
+    .adr_infos{
+        margin-top: 13px;
+        gap: 13px;
+    }
+
+    .city{
+        font-size: 35px;
+    }
+
+    .adr_info{
+        font-size: 11px;
+    }
+
+    .footer__sns{
+        gap: 19px;
+    }
+
+    .sn{
+        width: 62.5px;
+        height: 62.5px;
+        border-radius: 15px;
+    }
+
+    .sn_icon{
+        scale: 0.625;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .add_info{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    footer{
+        height: 384px;
+    }
+
+    .footer__content{
+        padding: 32px;
+        height: 320px;
+    }
+
+    .footer__logo{
+        gap: 8px;
+    }
+
+    .footer__logo-img{
+        width: 48px;
+        height: 48px;
+    }
+    
+    .footer__logo-name{
+        font-size: 25px;
+    }
+
+    .company{
+        font-size: 16px;
+    }
+
+    .adr_infos{
+        margin-top: 8px;
+        gap: 8px;
+    }
+
+    .city{
+        font-size: 24px;
+    }
+
+    .adr_info{
+        font-size: 7px;
+    }
+
+    .footer__sns{
+        gap: 12px;
+    }
+
+    .sn{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .sn_icon{
+        scale: 0.4;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 2px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .add_info{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    footer{
+        height: 932px;
+    }
+
+    .footer__content{
+        padding: 22.9px;
+        height: 886px;
+    }
+
+    .footer__logo{
+        gap: 6px;
+    }
+
+    .footer__logo-img{
+        width: 36.81px;
+        height: 36.81px;
+    }
+    
+    .footer__logo-name{
+        font-size: 20px;
+    }
+
+    .company{
+        font-size: 15px;
+    }
+    
+    .footer__adreses{
+        text-align: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .adr_infos{
+        margin-top: 13px;
+        gap: 13px;
+    }
+
+    .city{
+        font-size: 35px;
+    }
+
+    .adr_info{
+        margin: 0 auto;
+        font-size: 11px;
+    }
+
+    .footer__sns{
+        gap: 20px;
+    }
+
+    .sn{
+        width: 66.67px;
+        height: 66.67px;
+        border-radius: 15px;
+    }
+
+    .sn_icon{
+        scale: 0.67;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .footer__aditional{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .add_info{
+        margin: 0 auto;
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 429px) {
+    footer{
+        height: 694px;
+    }
+
+    .footer__content{
+        padding: 17.12px;
+        height: 659.76px;
+    }
+
+    .footer__logo{
+        gap: 5px;
+    }
+
+    .footer__logo-img{
+        width: 27.39px;
+        height: 27.39px;
+    }
+    
+    .footer__logo-name{
+        font-size: 15px;
+    }
+
+    .company{
+        font-size: 11px;
+    }
+    
+    .footer__adreses{
+        text-align: center;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    .adr_infos{
+        margin-top: 9px;
+        gap: 9px;
+    }
+
+    .city{
+        font-size: 35px;
+    }
+
+    .adr_info{
+        margin: 0 auto;
+        font-size: 8px;
+    }
+
+    .footer__sns{
+        gap: 15px;
+    }
+
+    .sn{
+        width: 49.61px;
+        height: 49.61px;
+        border-radius: 15px;
+    }
+
+    .sn_icon{
+        scale: 0.5;
+    }
+
+    .sn:hover{
+        background-color: #20382B;
+        border: 5px solid #1E1E1E;
+        transition: 0.2s ease-in-out;
+    }
+
+    .footer__aditional{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .add_info{
+        margin: 0 auto;
+        font-size: 14px;
+    }
+}
