@@ -1,0 +1,267 @@
+.bg{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(30, 30, 30, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-show {
+    display: flex;
+    animation: showBlock 0.3s linear forwards;
+  }
+  
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.auth{
+    color: #D9D9D9;
+    width: 500px;
+    height: 800px;
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+.log_in{
+    width: 500px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auth_title{
+    font-size: 60px;
+    text-align: center;
+}
+
+.login_main{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.login_form{
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.log_form{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.log_form > input, .reg_form > input{
+    padding: 0 20px;
+    font-size: 30px;
+    height: 60px;
+    border: 5px solid #325F46;
+    background-color: #D9D9D9;
+    outline: none;
+}
+
+.close_btn{
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.log_in_btn{
+    cursor: pointer;
+    margin-top: 10px;
+    color: #D9D9D9;
+    background-color: #325F46;
+    border: 5px solid #20382B;
+    font-size: 60px;
+    height: 100px;
+}
+
+.login_additional{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forgott_password{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(217, 217, 217, 0.5);;
+}
+
+.v_line{
+    height: 25px;
+    border: 1px solid #D9D9D9;
+}
+
+.registration{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.return_btn:hover,.close_btn:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out
+}
+
+.return_btn:not(:hover),.close_btn:not(:hover){
+    scale: 1;
+    transition: 0.3s ease-in-out
+}
+
+.return_btn:active,.close_btn:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out
+}
+
+.reg_btn:hover,.log_in_btn:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
+    transition: 0.3s ease-in-out;
+}
+
+.reg_btn:not(:hover),.log_in_btn:not(:hover){
+    scale: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.reg_btn:active,.log_in_btn:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.forgott_password:hover{
+    text-decoration: underline;
+}
+
+.registration:hover{
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+.registration:not(:hover){
+    scale: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.return_btn{
+    display: flex;
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.registration_account{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.registration_form{
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reg_form{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.reg_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user_agreement{
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(217, 217, 217, 0.5);
+}
+
+.reg_btn{
+    font-size: 30px;
+    color: #D9D9D9;
+    background-color: #325F46;
+    border: 5px solid #20382B;
+    height: 100px;
+}
+
+.user_agreement:hover{
+    text-decoration: underline;
+}
+
+
+
+.bg {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+
+  }
+  
+.auth {
+    -webkit-transition: 0.5s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+  
+    -o-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+  
+.log_in, .registration_account {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+}
+  
+.registration_account {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.auth.flip{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}

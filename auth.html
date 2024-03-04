@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./css/auth/auth.css">
+
+<div class="bg">
+    <div class="auth">
+        <div class="log_in">
+            <img src="./img/close_icon.svg" class="close_btn" alt="Закрыть">
+            <div class="login_form">
+                <div class="auth_title">Войти</div>
+                <div class="login_main">
+                    <div class="log_form">
+                        <input type="text" class="user_login" placeholder="Почта или телефон"/>
+                        <input type="password" class="password" name="password" minlength="8" required placeholder="Пароль"/>
+                    </div>
+                    <button class="log_in_btn">Войти</button>
+                    <div class="login_additional">
+                        <a href="#" class="forgott_password">Забыли пароль?</a>
+                        <div class="v_line"></div>
+                        <span class="registration">Регистрация</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="registration_account">
+            <div class="reg_buttons">
+                <img src="./img/return_icon.svg" class="return_btn">
+                <img src="./img/close_icon.svg" class="close_btn">
+            </div>
+            <div class="auth_title">Регистрация</div>
+            <div class="registration_form">
+                <div class="reg_form">
+                    <input type="email" class="reg_email" placeholder="Почта" pattern=".+@example\.com" size="30" required />
+                    <input type="tel" class="reg_tel" placeholder="Телефон" data-mask="phone">
+                    <input type="password" class="password" name="password" minlength="8" required placeholder="Пароль"/>
+                </div>
+
+                <div class="reg_bottom">
+                    <div class="user_agreement">Пользовательское соглашение</div>
+                    <button class="reg_btn">Зарегестрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<script src="./js/script.js"></script>
+<script src="./js/auth.js"></script>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>NMC</title>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/services__page/services.css">
+        <link rel="shortcut icon" href="./img/logo.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+        <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="pragma" content="no-cache">
+
+        <meta name="geo.region" content="RU">
+        <meta name="geo.placename" content="Москва, Московская область">
+        <meta name="geo.position" content="55.898604;37.390703">
+        <meta name="ICBM" content="55.898604, 37.390703">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+        <script> 
+            $(function(){
+              $("#nav").load("nav.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="copyboard">Скопировано!</div>
+        <header>
+            <div class="header__content">
+                <div id="nav"></div>
+
+                <div id="map"></div>
+
+                <div class="services">
+                    <div class="deliverys">
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">Эксперсс доставка:</div>
+                                    <img src="./img/express_delivery.svg" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price">Цена: от 15 $/кг</div>
+                                        <div class="delivery_date">Доставка от 1 дня</div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>
+                            </div>
+                        </div>
+
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">Авиа доставка:</div>
+                                    <img src="./img/avia_delivery.svg" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price">Цена: от 5.2 $/кг</div>
+                                        <div class="delivery_date">Доставка от 8 дней</div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>                            
+                            </div>
+                        </div>
+
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">Доставка быстрое авто:</div>
+                                    <img src="" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price"></div>
+                                        <div class="delivery_date"></div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>
+                            </div>
+                        </div>
+
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">Доставка авто:</div>
+                                    <img src="" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price"></div>
+                                        <div class="delivery_date"></div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>
+                            </div>
+                        </div>
+
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">ЖД доставка:</div>
+                                    <img src="" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price"></div>
+                                        <div class="delivery_date"></div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>
+                            </div>
+                        </div>
+
+                        <div class="delivery" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                            <div class="delivery_content">
+                                <div class="delivery_main_info">
+                                    <div class="delivery_name">Доставка морем:</div>
+                                    <img src="" class="delivery_icon" alt="delivery icon">
+                                    <div class="delivery_option">
+                                        <div class="delivery_price"></div>
+                                        <div class="delivery_date"></div>
+                                    </div>
+                                </div>
+                                <div class="delivery_photo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <main></main>
+        
+        <div id="footer"></div>
+
+        <script>
+            AOS.init({
+                easing: 'ease-in-out',
+            });
+        </script>
+    </body>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/services.js"></script>
+</html>
