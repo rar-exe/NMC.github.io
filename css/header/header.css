@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    overflow: hidden;
     position: relative;
 }
 
@@ -171,10 +172,10 @@ nav{
     margin: 0;
     right: 0;
     height: 50%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transform: translateX(200%);
+    transform: translateX(100%);
 
     padding: 20px;
     font-size: 40px;
@@ -182,7 +183,6 @@ nav{
 }
 
 .menu-show{
-    display: flex;
     transform: translateX(0);
     transition: 0.5s ease-in-out;
 }
@@ -193,8 +193,7 @@ nav{
 }
 
 .menu-hide{
-    display: none;
-    transform: translateX(200%);
+    transform: translateX(100%);
     transition: 0.5s ease-in-out;
 }
 

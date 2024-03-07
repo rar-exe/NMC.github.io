@@ -12,7 +12,7 @@ $('.return_btn').on('click', function(){
 
 let btn = document.querySelector('.login');
 let btn_bar = document.querySelector('.login-bar');
-let close_btns = document.querySelectorAll(".close_btn")
+let close_btns = document.querySelectorAll(".close_btn");
 var bg = document.querySelector('.bg');
 
 function showBlock() {
