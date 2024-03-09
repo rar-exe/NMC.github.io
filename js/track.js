@@ -43,7 +43,7 @@ ymaps.ready(() => {
     })
 });
 
-jQuery.get('./js/data.csv', function(df) {
+jQuery.get('/js/data.csv', function(df) {
     const res = d3.csvParse(df);
     var lines = df.split("\n"),
     output = [],
