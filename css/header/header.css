@@ -176,10 +176,6 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     transform: translateX(100%);
-
-    padding: 20px;
-    font-size: 40px;
-    top: 60px;
 }
 
 .menu-show{
@@ -293,6 +289,10 @@ nav{
     .submit:active{
         font-size: 14px;
     }
+
+    .hamburger-menu{
+        display: none;
+    }
   }
 
 
@@ -387,6 +387,10 @@ nav{
     
     .submit:active{
         font-size: 14px;
+    }
+
+    .hamburger-menu{
+        display: none;
     }
 }
 
@@ -483,6 +487,10 @@ nav{
     .submit:active{
         font-size: 8px;
     }
+
+    .hamburger-menu{
+        display: none;
+    }
 }
 
 
@@ -578,6 +586,10 @@ nav{
     .submit:active{
         font-size: 8px;
     }
+
+    .hamburger-menu{
+        display: none;
+    }
 }
 
 
@@ -672,6 +684,10 @@ nav{
     
     .submit:active{
         font-size: 5px;
+    }
+
+    .hamburger-menu{
+        display: none;
     }
 }
 
@@ -795,6 +811,13 @@ nav{
     .nav_btn:not(:active){
         scale: 1;
         transition: 0.2s ease-in-out;
+    }
+
+    .hamburger-menu{
+        top: 60px;
+        padding: 20px;
+        font-size: 40px;
+        display: flex;
     }
 }
 
@@ -923,5 +946,12 @@ nav{
     .nav_btn:not(:active){
         scale: 1;
         transition: 0.2s ease-in-out;
+    }
+
+    .hamburger-menu{
+        top: 43.77px;
+        padding: 14.88px;
+        font-size: 29.77px;
+        display: flex;
     }
 }

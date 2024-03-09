@@ -25,9 +25,9 @@
 }
 
 .auth{
-    color: #D9D9D9;
     width: 500px;
     height: 800px;
+    color: #D9D9D9;
     background-color: rgba(30, 30, 30, 0.95);
 }
 
@@ -46,23 +46,23 @@
 }
 
 .login_main{
+    gap: 60px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
 }
 
 .login_form{
-    height: 100%;
     margin: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .log_form{
+    gap: 70px;
     display: flex;
     flex-direction: column;
-    gap: 70px;
 }
 
 .log_form > input, .reg_form > input{
@@ -82,13 +82,13 @@
 }
 
 .log_in_btn{
-    cursor: pointer;
     margin-top: 10px;
+    font-size: 60px;
+    height: 100px;
+    cursor: pointer;
     color: #D9D9D9;
     background-color: #325F46;
     border: 5px solid #20382B;
-    font-size: 60px;
-    height: 100px;
 }
 
 .login_additional{
@@ -98,8 +98,8 @@
 }
 
 .forgott_password{
-    text-decoration: none;
     font-size: 20px;
+    text-decoration: none;
     color: rgba(217, 217, 217, 0.5);;
 }
 
@@ -109,8 +109,8 @@
 }
 
 .registration{
-    cursor: pointer;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .return_btn:hover,.close_btn:hover{
@@ -160,9 +160,9 @@
 }
 
 .return_btn{
+    margin-left: 20px;
     display: flex;
     margin-right: auto;
-    margin-left: 20px;
     cursor: pointer;
 }
 
@@ -179,38 +179,38 @@
 }
 
 .registration_form{
-    height: 100%;
     margin: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .reg_form{
+    gap: 70px;
     display: flex;
     flex-direction: column;
-    gap: 70px;
 }
 
 .reg_bottom{
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 .user_agreement{
+    font-size: 20px;
     cursor: pointer;
     text-align: center;
-    font-size: 20px;
     color: rgba(217, 217, 217, 0.5);
 }
 
 .reg_btn{
     font-size: 30px;
+    height: 100px;
     color: #D9D9D9;
     background-color: #325F46;
     border: 5px solid #20382B;
-    height: 100px;
 }
 
 .user_agreement:hover{
@@ -264,4 +264,96 @@
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 767px) {
+    .auth{
+        width: 300px;
+        height: 480px;
+    }
+
+    .log_in{
+        width: 300px;
+    }
+
+    .auth_title{
+        font-size: 35px;
+    }
+
+    .login_main{
+        gap: 36px;
+    }
+
+    .login_form{
+        margin: 30px;
+    }
+
+    .log_form{
+        gap: 42px;
+    }
+
+    .log_form > input, .reg_form > input{
+        padding: 0 12px;
+        font-size: 18px;
+        height: 36px;
+    }
+
+    .log_in_btn{
+        margin-top: 6px;
+        font-size: 36px;
+        height: 60px;
+    }
+
+    .forgott_password{
+        font-size: 12px;
+    }
+    
+    .v_line{
+        height: 15px;
+    }
+
+    .close_btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .v_line{
+        height: 15px;
+    }
+
+    .registration{
+        font-size: 12px;
+    }
+
+    .return_btn{
+        margin-top: 12px;
+        margin-left: 12px;
+        height: 30px;
+        width: 50px;
+    }
+
+    .registration_account{
+        width: 300px;
+    }
+
+    .registration_form{
+        margin: 30px;
+    }
+
+    .reg_form{
+        gap: 42px;
+    }
+
+    .reg_bottom{
+        gap: 12px;
+    }
+
+    .user_agreement{
+        font-size: 12px;
+    }
+
+    .reg_btn{
+        font-size: 18px;
+        height: 60px;
+    }
 }
