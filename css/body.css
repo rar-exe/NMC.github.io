@@ -59,6 +59,33 @@ body{
     background-color: #20382B;
 }
 
+/* Left */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    border: 8px solid transparent; 
+    border-right: 8px solid #1E1E1E;
+}
+  
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+    border-right: 8px solid #D9D9D9;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+    background-color: #20382B;
+}
+  /* Right */
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+    border: 8px solid transparent; 
+    border-left: 8px solid #1E1E1E;
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
+    border-left:8px solid #D9D9D9;
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:increment:active {
+    background-color: #20382B;
+}
+
 .copyboard{
     position: sticky;
     display: none;

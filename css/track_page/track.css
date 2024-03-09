@@ -1,0 +1,127 @@
+.track{
+    height: 1080px;
+}
+
+.header__content{
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+.track_order_info{
+    height: fit-content;
+}
+
+#map{
+    height: 1080px;
+    width: 100%;
+    position: absolute; 
+    z-index: -1;
+    top: 0; 
+    left: 0;
+}
+
+.track_content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track__block{
+    background-color: #20382B;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    border-radius: 50px;
+    width: 800px;
+    height: 400px;
+}
+
+.track_block_content{
+    height: 280px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#track_number{
+    margin: 0 auto;
+    color: rgba(30, 30, 30, 0.87);
+    width: 600px;
+    height: 60px;
+    box-shadow: inset 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.track_error{
+    margin: 0 auto;
+    font-size: 20px;
+    color: #BF3030;
+    display: none;
+}
+
+.track__button{
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #325F46;
+    color: #D9D9D9;
+    border: none;
+    border-radius: 25px;
+    font-size: 60px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.track__button:hover{
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+.track__button:not(:hover){
+    scale: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.track__button:active{
+    scale: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.track_order_info{
+    display: none;
+    background-color: #20382B;
+    width: 100%;
+    color: #D9D9D9;
+}
+
+.track_order_content{
+    background-color: rgba(30, 30, 30, 0.87);
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.order_number{
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #D9D9D9;
+    font-size: 20px;
+    text-align: center;
+    height: fit-content;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0;
+}
+
+td{
+    border: 1px solid #D9D9D9;
+    padding: 5px;
+    background-color: #325F46;
+}

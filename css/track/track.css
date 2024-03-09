@@ -36,6 +36,7 @@
 
 .track_button{
     margin:  0 auto;
+    text-transform: uppercase;
     background-color: #325F46;
     color: #D9D9D9;
     border: none;
@@ -53,7 +54,6 @@
 }
 
 .track_button:active{
-    box-shadow: inset 0 10px 4px rgba(0, 0, 0, 0.25);
     scale: 1;
     transition: 0.3s ease-in-out;
 }
