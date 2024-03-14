@@ -77,67 +77,67 @@ footer{
 }
 
 .footer__logo:hover{
-    scale: 1.1;
-    transition: 0.2s ease-in-out;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
 }
 
 .footer__logo:not(:hover){
     scale: 1;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .footer__logo:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 
 .sn:not(:hover){
     background-color: #1E1E1E;
-    border: 0px solid #1E1E1E;
-    transition: 0.2s ease-in-out;
+    outline: 0px solid #1E1E1E;
+    transition: 0.3s ease-in-out;
 }
 
 .sn:active{
-    scale: 0.9;
-    transition: 0.2s ease-in-out;
+    scale: 0.95;
+    transition: 0.3s ease-in-out;
 }
 
 .sn:not(:active){
     scale: 1;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .company:hover{
     text-decoration: underline;
-    scale: 1.1;
-    transition: 0.2s ease-in-out;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
 }
 
 .company:not(:hover){
     text-decoration: none;
     scale: 1;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .company:active{
-    scale: 0.9;
-    transition: 0.9 ease-in-out;
+    scale: 0.95;
+    transition: 0.3s ease-in-out;
 }
 
 .add_info:hover{
     text-decoration: underline;
-    scale: 1.1;
-    transition: 0.2s ease-in-out;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
 }
 
 .add_info:not(:hover){
     text-decoration: none;
     scale: 1;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .add_info:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 
@@ -201,8 +201,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .add_info{
@@ -268,8 +268,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .add_info{
@@ -335,8 +335,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .add_info{
@@ -402,8 +402,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .add_info{
@@ -469,8 +469,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 2px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 2px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .add_info{
@@ -543,8 +543,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .footer__aditional{
@@ -623,8 +623,8 @@ footer{
 
     .sn:hover{
         background-color: #20382B;
-        border: 5px solid #1E1E1E;
-        transition: 0.2s ease-in-out;
+        outline: 5px solid #1E1E1E;
+        transition: 0.3s ease-in-out;
     }
 
     .footer__aditional{

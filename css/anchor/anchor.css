@@ -1,0 +1,21 @@
+.anchor_block{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+    background-color: #325F46;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.anchor_arrow{
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/anchor_arrow.svg");
+    background-size: 100% 100%;
+}

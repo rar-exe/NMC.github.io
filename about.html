@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>NMC</title>
+
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/about/about.css">
+        <link rel="shortcut icon" href="./img/logo.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+        <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="pragma" content="no-cache">
+
+        <meta name="geo.region" content="RU">
+        <meta name="geo.placename" content="Москва, Московская область">
+        <meta name="geo.position" content="55.898604;37.390703">
+        <meta name="ICBM" content="55.898604, 37.390703">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script> 
+            $(function(){
+              $("#nav").load("nav.html");
+              $("#auth").load("auth.html"); 
+              $("#footer").load("footer.html"); 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="copyboard">Скопировано!</div>
+        <div id="auth"></div>
+        <div id="nav"></div>
+        <header>
+            <div class="header__content">
+
+                <div class="about_content">
+                    <div class="director"></div>
+                    <div class="manager"></div>
+                </div>
+            </div>
+        </header>
+        <main></main>
+        
+        <div id="footer"></div>
+
+        <script>
+            AOS.init({
+                easing: 'ease-in-out',
+            });
+        </script>
+    </body>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/about.js"></script>
+</html>

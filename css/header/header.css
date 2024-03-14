@@ -26,7 +26,7 @@ nav{
     top: 0;
     left: 0;
     overflow: hidden;
-    background-color: rgba(32, 56, 43, 0.87);
+    background-color: rgba(32, 56, 43, 0.7);
 }
 
 .links{
@@ -53,6 +53,7 @@ nav{
 .login{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .login > span{
@@ -94,10 +95,13 @@ nav{
     gap: 0;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .link:hover{
-    scale: 1.1;
+    scale: 1.05;
     color: #6A9C81;
-    text-decoration:underline;
     transition: 0.2s ease-in-out;
 }
 
@@ -105,18 +109,16 @@ nav{
     scale: 1;
     color: #D9D9D9;
     transition: 0.2s ease-in-out;
-    text-decoration: none;
 }
 
 .link:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.2s ease-in-out;
 }
 
 .login:hover{
-    scale: 1.1;
+    scale: 1.05;
     color: #6A9C81;
-    text-decoration:underline;
     transition: 0.2s ease-in-out;
 }
 
@@ -124,16 +126,15 @@ nav{
     scale: 1;
     color: #D9D9D9;
     transition: 0.2s ease-in-out;
-    text-decoration: none;
 }
 
 .login:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.2s ease-in-out;
 }
 
 .logo:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.2s ease-in-out;
 }
 
@@ -143,7 +144,7 @@ nav{
 }
 
 .logo:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.2s ease-in-out;
 }
 

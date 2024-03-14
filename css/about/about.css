@@ -1,0 +1,11 @@
+.header__content{
+    background-color: #20382B;
+    height: fit-content;
+}
+
+.about_content{
+    background-color: rgba(30, 30, 30, 0.87);
+    width: 100%;
+    height: fit-content;
+    padding: 100px 40px;
+}
