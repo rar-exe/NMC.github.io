@@ -1,5 +1,5 @@
 .track{
-    height: 1080px;
+    height: 100%;
 }
 
 .header__content{
@@ -11,7 +11,7 @@
 }
 
 #map{
-    height: 1080px;
+    height: 100%;
     width: 100%;
     position: absolute; 
     z-index: -1;
@@ -61,18 +61,18 @@
 .track__button{
     width: 400px;
     height: 100px;
+    border-radius: 25px;
+    font-size: 60px;
     margin: 0 auto;
     background-color: #325F46;
     color: #D9D9D9;
     border: none;
-    border-radius: 25px;
-    font-size: 60px;
     text-transform: uppercase;
     box-shadow: 0 10px 10px rgba(0,0,0,0.25);
 }
 
 .track__button:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.3s ease-in-out;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .track__button:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 
@@ -124,4 +124,122 @@ td{
     border: 1px solid #D9D9D9;
     padding: 5px;
     background-color: #325F46;
+}
+
+@media screen and (max-width: 1439px) {
+    .track__block{
+        border-radius: 25px;
+        width: 500px;
+        height: 250px;
+    }
+
+    .track_block_content{
+        height: 175px;
+        padding: 37.5px 0;
+    }
+
+    #track_number{
+        width: 375px;
+        height: 37.5px;
+    }
+
+    .track_error{
+        font-size: 14px;
+    }
+
+    .track__button{
+        width: 250px;
+        height: 62.5px;
+        border-radius: 15px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .track__block{
+        border-radius: 25px;
+        width: 300px;
+        height: 150px;
+    }
+
+    .track_block_content{
+        height: 105px;
+        padding: 22.5px 0;
+    }
+
+    #track_number{
+        width: 225px;
+        height: 22.5px;
+    }
+
+    .track_error{
+        font-size: 8px;
+    }
+
+    .track__button{
+        width: 150px;
+        height: 37.5px;
+        border-radius: 15px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .track__block{
+        border-radius: 25px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .track_block_content{
+        height: 280px;
+        padding: 60px 0;
+    }
+
+    #track_number{
+        width: 260px;
+        height: 60px;
+    }
+
+    .track_error{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .track__button{
+        width: 260px;
+        height: 100px;
+        border-radius: 15px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    .track__block{
+        border-radius: 25px;
+        width: 240px;
+        height: 320px;
+    }
+
+    .track_block_content{
+        height: 224px;
+        padding: 48px 0;
+    }
+
+    #track_number{
+        width: 208px;
+        height: 48px;
+    }
+
+    .track_error{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .track__button{
+        width: 208px;
+        height: 80px;
+        border-radius: 15px;
+        font-size: 30px;
+    }
 }
