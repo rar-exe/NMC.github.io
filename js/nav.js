@@ -1,6 +1,5 @@
 let nav_btn = document.querySelector(".nav_btn");
-let menu = document.querySelector(".hamburger-menu");
-let screenWidth = window.screen.width;
+let menu = document.querySelector(".menu_modal");
 let menu_flag = true;
 
 function show_hide_menu(){
@@ -20,3 +19,8 @@ function show_hide_menu(){
 }
 
 nav_btn.addEventListener("click", show_hide_menu);
+window.addEventListener("click", function(event){
+    if (event.target == menu) {
+        show_hide_menu()
+    }
+});

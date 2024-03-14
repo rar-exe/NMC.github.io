@@ -1,3 +1,11 @@
+let inpts = document.querySelectorAll("input");
+
+function clear_input(){
+    inpts.forEach(function(inpt){
+        inpt.value = "";
+    })
+}
+
 let flag = false;
 
 $('.registration').on('click', function(){
@@ -22,6 +30,7 @@ function showBlock() {
 function hideBlock() {
     bg.classList.remove('b-show');
     if (flag) {$('.auth').toggleClass('flip'); }
+    clear_input()
 }
 
 close_btns.forEach(function(close_btn){
@@ -29,3 +38,9 @@ close_btns.forEach(function(close_btn){
 })
 btn.addEventListener('click', showBlock);
 btn_bar.addEventListener('click', showBlock);
+
+window.onclick = function(event) {
+    if (event.target == bg) {
+        hideBlock()
+    }
+}
