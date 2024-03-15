@@ -46,7 +46,7 @@ header{
 }
 
 .delivery_icon{
-    width: 243px;
+    width: fit-content;
     height: 243px;
 }
 
@@ -57,8 +57,13 @@ header{
     gap: 0;
 }
 
-.delivery_photo{
-    width: 400px;
+.delivery_info{
+    padding: 0 15px;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    width: 370px;
     height: 560px;
     border-radius: 25px;
     background-color: #325F46;
