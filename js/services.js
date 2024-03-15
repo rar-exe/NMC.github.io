@@ -4,7 +4,7 @@ let photo = document.querySelector(".slide_photo__photo > div");
 
 let current_photo = 1;
 
-let photos = ['url("../../img/back_delivery_photo.jpg")','url("../../img/delivery_photo.jpg")','url("../../img/next_delivery_photo.jpg")']
+let photos = ['url("../img/back_delivery_photo.jpg")','url("../img/delivery_photo.jpg")','url("../img/next_delivery_photo.jpg")']
 
 function photo_back(){
     photo.classList.remove("change_photo_show");
