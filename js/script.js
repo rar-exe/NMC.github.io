@@ -9,14 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-let adress = document.querySelectorAll(".adress")
+let adresses = document.querySelectorAll(".adress")
 let copyboard = document.querySelector(".copyboard")
 
-adress.forEach(function(adr){
+adresses.forEach(function(adr){
   adr.addEventListener("click", function(){
+    console.log("yes")
     navigator.clipboard.writeText(adr.innerHTML);
+    copyboard.style.position = "fixed"
     copyboard.style.display = "flex";
     setTimeout(function(){
+      copyboard.style.position = "none"
       copyboard.style.display = "none";
     }, 1000)
   })

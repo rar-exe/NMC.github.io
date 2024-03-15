@@ -87,7 +87,7 @@ body{
 }
 
 .copyboard{
-    position: sticky;
+    position: none;
     display: none;
     z-index: 1000;
     width: 150px;
