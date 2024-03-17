@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="./css/auth/auth.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <div class="bg">
     <div class="auth">
@@ -9,7 +10,15 @@
                 <div class="login_main">
                     <div class="log_form">
                         <input type="text" class="user_login" placeholder="Почта или телефон"/>
-                        <input type="password" class="password" name="password" minlength="8" required placeholder="Пароль"/>
+                        <div class="password_block">
+                            <input type="password" class="password login_pass" name="password" minlength="8" required placeholder="Пароль" />
+                            <div>
+                                <div class="eye slash login_eye" onclick="togglePWLogin()">
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <button class="log_in_btn">Войти</button>
                     <div class="login_additional">
@@ -30,8 +39,16 @@
             <div class="registration_form">
                 <div class="reg_form">
                     <input type="email" class="reg_email" placeholder="Почта" pattern=".+@example\.com" size="30" required />
-                    <input type="tel" class="reg_tel" placeholder="Телефон" data-mask="phone">
-                    <input type="password" class="password" name="password" minlength="8" required placeholder="Пароль"/>
+                    <input type="tel" class="reg_tel" name="phone_number" placeholder="Телефон" data-mask="phone" />
+                    <div class="password_block">
+                        <input type="password" class="password reg_pass" name="password" minlength="8" required placeholder="Пароль" />
+                        <div>
+                            <div class="eye slash reg_eye" onclick="togglePWReg()">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="reg_bottom">
@@ -43,5 +60,6 @@
     </div>    
 </div>
 
+<script src="https://unpkg.com/imask"></script>
 <script src="./js/script.js"></script>
 <script src="./js/auth.js"></script>

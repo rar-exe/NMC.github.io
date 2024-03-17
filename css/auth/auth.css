@@ -65,7 +65,18 @@
     flex-direction: column;
 }
 
-.log_form > input, .reg_form > input{
+.password_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.password_block > div{
+    margin-left: -60px;
+}
+
+input{
+    width: 350px;
     padding: 0 20px;
     font-size: 30px;
     height: 60px;
@@ -114,7 +125,7 @@
 }
 
 .return_btn:hover,.close_btn:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.3s ease-in-out
 }
 
@@ -124,12 +135,12 @@
 }
 
 .return_btn:active,.close_btn:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out
 }
 
 .reg_btn:hover,.log_in_btn:hover{
-    scale: 1.1;
+    scale: 1.05;
     box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
     transition: 0.3s ease-in-out;
 }
@@ -140,7 +151,7 @@
 }
 
 .reg_btn:active,.log_in_btn:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 
@@ -150,7 +161,7 @@
 
 .registration:hover{
     text-decoration: underline;
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.3s ease-in-out;
 }
 
@@ -266,6 +277,69 @@
     transform: rotateY(180deg);
 }
 
+.eye{
+    width: 2.5em;
+    height:1.5em;
+    position: relative;
+    display:inline-block;
+    --background: #D9D9D9;
+    --color: #3b3b3b;
+}
+
+.eye div{
+    overflow:hidden;
+    height:50%;
+    position:relative;
+    margin-bottom:-1px;
+}
+
+.eye div:before{
+    content:'';
+    background: #3b3b3b;
+    position:absolute;
+    left:0;
+    right:0;
+    height:300%;
+    border-radius:100%;
+}
+
+.eye div:last-child:before{
+    bottom:0;
+}
+
+.eye:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:0.7em;
+    height:0.7em;
+    background:var(--color);
+    border:0.2em solid var(--background);
+    border-radius:100%;
+    z-index:1;
+}
+
+.eye:after{
+    content:'';
+    position:absolute;
+    top:-0.15em;
+    left:calc(33.333% - 0.15em);
+    transform:rotate(45deg) scaleX(0);
+    transform-origin:left center;
+    width:90%;
+    height:0.2em;
+    background:var(--color);
+    border-top:0.2em solid var(--background);
+    z-index:2;
+    transition:transform 0.25s;
+}
+
+.eye.slash:after{
+    transform:rotate(45deg) scaleX(1);
+}
+
 @media screen and (max-width: 767px) {
     .auth{
         width: 300px;
@@ -292,7 +366,8 @@
         gap: 42px;
     }
 
-    .log_form > input, .reg_form > input{
+    input{
+        width: 206px;
         padding: 0 12px;
         font-size: 18px;
         height: 36px;

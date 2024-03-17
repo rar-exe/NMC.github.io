@@ -1,6 +1,5 @@
-let inpts = document.querySelectorAll("input");
-
 function clear_input(){
+    let inpts = document.querySelectorAll("input");
     inpts.forEach(function(inpt){
         inpt.value = "";
     })
@@ -44,3 +43,34 @@ window.onclick = function(event) {
         hideBlock()
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('[data-mask="phone"]')
+    if (!elements) return
+      const phoneOptions = {
+        mask: '+7(000)000-00-00',
+      }
+    elements.forEach(el => {
+      IMask(el, phoneOptions)
+    })
+  })
+
+function togglePWLogin(){
+    document.querySelector('.login_eye').classList.toggle('slash');
+    var password = document.querySelector('.login_pass');
+    if(password.getAttribute('type') === 'password'){
+      password.setAttribute('type', 'text');
+    } else {
+      password.setAttribute('type', 'password');
+    }
+  }
+
+function togglePWReg(){
+    document.querySelector('.reg_eye').classList.toggle('slash');
+    var password = document.querySelector('.reg_pass');
+    if(password.getAttribute('type') === 'password'){
+      password.setAttribute('type', 'text');
+    } else {
+      password.setAttribute('type', 'password');
+    }
+  }
