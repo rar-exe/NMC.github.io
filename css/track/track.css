@@ -44,7 +44,7 @@
 }
 
 .track_button:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.3s ease-in-out;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .track_button:active{
-    scale: 1;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 

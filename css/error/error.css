@@ -48,7 +48,7 @@
 }
 
 .home_btn:hover{
-    scale: 1.1;
+    scale: 1.05;
     transition: 0.3s ease-in-out;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .home_btn:active{
-    scale: 0.9;
+    scale: 0.95;
     transition: 0.3s ease-in-out;
 }
 
