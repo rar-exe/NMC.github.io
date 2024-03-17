@@ -1,8 +1,24 @@
+let reg_flag_pass = false;
+let log_flag_pass =false;
+
 function clear_input(){
     let inpts = document.querySelectorAll("input");
     inpts.forEach(function(inpt){
         inpt.value = "";
     })
+    if (log_flag_pass){
+        document.querySelector('.login_eye').classList.toggle('slash');
+        var password = document.querySelector('.login_pass');
+        password.setAttribute('type', 'password');
+    }
+
+    if (reg_flag_pass){
+        document.querySelector('.reg_eye').classList.toggle('slash');
+        var password = document.querySelector('.reg_pass');
+        password.setAttribute('type', 'password');
+    }
+    reg_flag_pass = false;
+    log_flag_pass =false;
 }
 
 let flag = false;
@@ -56,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 function togglePWLogin(){
+    log_flag_pass = !log_flag_pass
     document.querySelector('.login_eye').classList.toggle('slash');
     var password = document.querySelector('.login_pass');
     if(password.getAttribute('type') === 'password'){
@@ -66,6 +83,7 @@ function togglePWLogin(){
   }
 
 function togglePWReg(){
+    reg_flag_pass = !reg_flag_pass
     document.querySelector('.reg_eye').classList.toggle('slash');
     var password = document.querySelector('.reg_pass');
     if(password.getAttribute('type') === 'password'){
