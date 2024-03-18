@@ -66,16 +66,29 @@
 }
 
 .password_block{
+    width: 350px;
+    padding: 0 20px;
+    font-size: 30px;
+    height: 60px;
+    border: 5px solid #325F46;
+    background-color: #D9D9D9;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
-.password_block > div{
-    margin-left: -60px;
+.password_block > input{
+    caret-color: #3b3b3b;
+    width: 310px;
+    height: 60px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-input{
+.reg_form > input, .log_form > input{
     caret-color: #3b3b3b;
     width: 350px;
     padding: 0 20px;
@@ -279,8 +292,8 @@ input{
 }
 
 .eye{
-    width: 2.5em;
-    height:1.5em;
+    width: 1.25em;
+    height:0.75em;
     position: relative;
     display:inline-block;
     --background: #D9D9D9;
@@ -314,10 +327,10 @@ input{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    width:0.7em;
-    height:0.7em;
+    width:0.35em;
+    height:0.35em;
     background:var(--color);
-    border:0.2em solid var(--background);
+    border:0.1em solid var(--background);
     border-radius:100%;
     z-index:1;
 }
@@ -330,9 +343,9 @@ input{
     transform:rotate(45deg) scaleX(0);
     transform-origin:left center;
     width:90%;
-    height:0.2em;
+    height:0.1em;
     background:var(--color);
-    border-top:0.2em solid var(--background);
+    border-top:0.1em solid var(--background);
     z-index:2;
     transition:transform 0.25s;
 }
@@ -367,11 +380,26 @@ input{
         gap: 42px;
     }
 
-    input{
+    .password_block{
         width: 206px;
         padding: 0 12px;
         font-size: 18px;
         height: 36px;
+        border: 3px solid #325F46;
+    }
+    
+    .password_block > input{
+        width: 166px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .reg_form > input, .log_form > input{
+        width: 206px;
+        padding: 0 12px;
+        font-size: 18px;
+        height: 36px;
+        border: 3px solid #325F46;
     }
 
     .log_in_btn{
