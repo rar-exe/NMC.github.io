@@ -1,3 +1,7 @@
+header{
+    height: fit-content;
+}
+
 .header__content{
     background-color: #20382B;
     height: fit-content;
@@ -7,5 +11,361 @@
     background-color: rgba(30, 30, 30, 0.87);
     width: 100%;
     height: fit-content;
-    padding: 100px 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_company{
+    color: #D9D9D9;
+    text-align: center;
+}
+
+.stuffs{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: row;
+}
+
+.stuff_photo{
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #20382B;
+}
+
+.stuff_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.stuff_name{
+    color: #D9D9D9;
+}
+
+.stuff_post{
+    color: #325F46;
+}
+
+.stuff_about{
+    color: #D9D9D9;
+}
+
+@media screen and (min-width: 1920px) {
+    .about_content{
+        padding: 100px 0;
+        gap: 100px;
+    }
+
+    .about_company{
+        font-size: 100px;
+    }
+
+    .stuffs{
+        gap: 200px;
+    }
+
+    .stuff{
+        gap: 40px;
+    }
+
+    .stuff_photo{
+        width: 300px;
+        height: 400px;
+    }
+
+    .stuff_info{
+        gap: 10px;
+    }
+
+    .stuff_name{
+        font-size: 60px;
+    }
+
+    .stuff_post{
+        font-size: 50px;
+    }
+
+    .stuff_about{
+        width: 875px;
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 1919px) {
+    .about_content{
+        padding: 70px 0;
+        gap: 75px;
+    }
+
+    .about_company{
+        font-size: 75px;
+    }
+
+    .stuffs{
+        gap: 150px;
+    }
+
+    .stuff{
+        gap: 30px;
+    }
+
+    .stuff_photo{
+        width: 225px;
+        height: 300px;
+    }
+
+    .stuff_info{
+        gap: 8px;
+    }
+
+    .stuff_name{
+        font-size: 45px;
+    }
+
+    .stuff_post{
+        font-size: 35px;
+    }
+
+    .stuff_about{
+        width: 657px;
+        font-size: 19px;
+    }
+}
+
+
+
+@media screen and (max-width: 1439px) {
+    .about_content{
+        padding: 66.66px 0;
+        gap: 67px;
+    }
+
+    .about_company{
+        font-size: 65px;
+    }
+
+    .stuffs{
+        gap: 133px;
+    }
+
+    .stuff{
+        gap: 27px;
+    }
+
+    .stuff_photo{
+        width: 200px;
+        height: 266.67px;
+    }
+
+    .stuff_info{
+        gap: 7px;
+    }
+
+    .stuff_name{
+        font-size: 40px;
+    }
+
+    .stuff_post{
+        font-size: 30px;
+    }
+
+    .stuff_about{
+        width: 584px;
+        font-size: 17px;
+    }
+}
+
+
+
+@media screen and (max-width: 1279px) {
+    .about_content{
+        padding: 62.5px 0;
+        gap: 63px;
+    }
+
+    .about_company{
+        font-size: 60px;
+    }
+
+    .stuffs{
+        gap: 125px;
+    }
+
+    .stuff{
+        gap: 25px;
+    }
+
+    .stuff_photo{
+        width: 187.5px;
+        height: 250px;
+    }
+
+    .stuff_info{
+        gap: 6px;
+    }
+
+    .stuff_name{
+        font-size: 35px;
+    }
+
+    .stuff_post{
+        font-size: 30px;
+    }
+
+    .stuff_about{
+        width: 547px;
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1199px) {
+    .about_content{
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .about_company{
+        font-size: 40px;
+    }
+
+    .stuffs{
+        gap: 80px;
+    }
+
+    .stuff{
+        gap: 16px;
+    }
+
+    .stuff_photo{
+        width: 120px;
+        height: 160px;
+    }
+
+    .stuff_info{
+        gap: 4px;
+    }
+
+    .stuff_name{
+        font-size: 24px;
+    }
+
+    .stuff_post{
+        font-size: 20px;
+    }
+
+    .stuff_about{
+        width: 350px;
+        font-size: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .about_content{
+        padding: 40px 15px;
+        gap: 80px;
+        width: 400px;
+    }
+
+    .about_company{
+        margin-left: -15px;
+        width: 430px;
+        font-size: 60px;
+    }
+
+    .stuffs{
+        gap: 200px;
+    }
+
+    .stuff{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .stuff_photo{
+        margin: 0 auto;
+        width: 300px;
+        height: 400px;
+    }
+
+    .stuff_info{
+        gap: 20px;
+    }
+
+    .stuff_name{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .stuff_post{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .stuff_about{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 429px) {
+    .about_content{
+        padding: 29.77px 12px;
+        gap: 60px;
+        width: 296px;
+    }
+
+    .about_company{
+        margin-left: -12px;
+        width: 320px;
+        font-size: 45px;
+    }
+
+    .stuffs{
+        gap: 150px;
+    }
+
+    .stuff{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stuff_photo{
+        margin: 0 auto;
+        width: 296px;
+        height: 395px;
+    }
+
+    .stuff_info{
+        gap: 15px;
+    }
+
+    .stuff_name{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .stuff_post{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .stuff_about{
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
 }
