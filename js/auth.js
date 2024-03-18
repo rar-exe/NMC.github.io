@@ -72,23 +72,63 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 function togglePWLogin(){
-    log_flag_pass = !log_flag_pass
-    document.querySelector('.login_eye').classList.toggle('slash');
-    var password = document.querySelector('.login_pass');
-    if(password.getAttribute('type') === 'password'){
-      password.setAttribute('type', 'text');
-    } else {
-      password.setAttribute('type', 'password');
-    }
+  log_flag_pass = !log_flag_pass
+  document.querySelector('.login_eye').classList.toggle('slash');
+  var password = document.querySelector('.login_pass');
+  if(password.getAttribute('type') === 'password'){
+    password.setAttribute('type', 'text');
+  } else {
+    password.setAttribute('type', 'password');
   }
+}
 
 function togglePWReg(){
-    reg_flag_pass = !reg_flag_pass
-    document.querySelector('.reg_eye').classList.toggle('slash');
-    var password = document.querySelector('.reg_pass');
-    if(password.getAttribute('type') === 'password'){
-      password.setAttribute('type', 'text');
-    } else {
-      password.setAttribute('type', 'password');
-    }
+  reg_flag_pass = !reg_flag_pass
+  document.querySelector('.reg_eye').classList.toggle('slash');
+  var password = document.querySelector('.reg_pass');
+  if(password.getAttribute('type') === 'password'){
+    password.setAttribute('type', 'text');
+  } else {
+    password.setAttribute('type', 'password');
   }
+}
+
+$(".login_pass").keyup(function(event) {
+  if (event.keyCode === 13) {
+    $(".log_in_btn").click();
+  }
+});
+
+$(".user_login").keyup(function(event) {
+  if (event.keyCode === 13) {
+    $(".log_in_btn").click();
+  }
+});
+
+let login_button = document.querySelector(".log_in_btn");
+login_button.addEventListener("click",function(){
+  console.log("You authorizate")
+})
+
+$(".reg_email").keyup(function(event) {
+  if (event.keyCode === 13) {
+    $(".reg_btn").click();
+  }
+});
+
+$(".reg_tel").keyup(function(event) {
+  if (event.keyCode === 13) {
+    $(".reg_btn").click();
+  }
+});
+
+$(".reg_pass").keyup(function(event) {
+  if (event.keyCode === 13) {
+    $(".reg_btn").click();
+  }
+});
+
+let reg_button = document.querySelector(".reg_btn");
+reg_button.addEventListener("click",function(){
+  console.log("You registred")
+})

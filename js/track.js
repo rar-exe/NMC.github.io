@@ -57,3 +57,9 @@ jQuery.get('./data/data.csv', function(df) {
 
     div.innerHTML = output;
 });
+
+$("#track_number").keyup(function(event) {
+    if (event.keyCode === 13) {
+      $(".track__button").click();
+    }
+  });
