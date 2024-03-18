@@ -23,6 +23,8 @@ video{
 }
 
 nav{
+    z-index: 999;
+    width: calc(100% - padding);
     top: 0;
     left: 0;
     overflow: hidden;
@@ -166,7 +168,7 @@ nav{
 
 .menu_modal{
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
     width: 100%;
     height: 100vh;
     right: 0;
@@ -212,6 +214,8 @@ nav{
 
     nav{
         padding: 20px 40px;
+        --pading_around :80px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -311,6 +315,8 @@ nav{
 
     nav{
         padding: 20px 40px;
+        --pading_around :80px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -410,6 +416,8 @@ nav{
 
     nav{
         padding: 13.33px 26.67px;
+        --pading_around :53.34px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -509,6 +517,8 @@ nav{
 
     nav{
         padding: 12.5px 25px;
+        --pading_around :50px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -608,6 +618,8 @@ nav{
 
     nav{
         padding: 8px 16px;
+        --pading_around :32px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -707,6 +719,8 @@ nav{
 
     nav{
         padding: 10px 25px;
+        --pading_around :50px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
@@ -840,6 +854,8 @@ nav{
 
     nav{
         padding: 7px 19px;
+        --pading_around :38px;
+        width: calc(100% - var(--pading_around));
         box-shadow: 0px 10px 4px rgba(0,0,0,0.25);
     }
     
